@@ -2,7 +2,7 @@
 
 A comprehensive REST API for managing personal expenses built with Spring Boot. This application provides CRUD operations, advanced filtering, category management, and insightful summary reporting with persistent data storage.
 
-## 🚀 Project Overview
+##  Project Overview
 
 The Personal Expense Tracker is a robust backend application designed to help users manage their financial expenses efficiently. It offers a complete set of REST endpoints for tracking, categorizing, and analyzing personal spending patterns with automatic data persistence.
 
@@ -13,20 +13,20 @@ The Personal Expense Tracker is a robust backend application designed to help us
 - **Data Persistence**: Reliable storage with H2 database (file-based)
 - **Validation**: Built-in input validation and error handling
 
-## ✨ Features
+##  Features
 
-- ✅ **Expense Management**: Add, update, delete, and view individual expenses
-- 📊 **Categorization**: Organize expenses by categories (Food, Travel, Bills, Shopping, etc.)
-- 🔍 **Advanced Filtering**: Filter expenses by date range or specific categories
-- 📈 **Summary Reports**: 
-  - Total spending calculations
-  - Category-wise spending breakdown
-  - Monthly spending trends
-- 💾 **Database Persistence**: Automatic data storage with H2 database
-- ✔️ **Input Validation**: Server-side validation for all expense data
-- 🚀 **RESTful API**: Clean JSON-based API following REST principles
+-  **Expense Management**: Add, update, delete, and view individual expenses
+-  **Categorization**: Organize expenses by categories (Food, Travel, Bills, Shopping, etc.)
+-  **Advanced Filtering**: Filter expenses by date range or specific categories
+-  **Summary Reports**: 
+  -   Total spending calculations
+  -   Category-wise spending breakdown
+  -   Monthly spending trends
+-  **Database Persistence**: Automatic data storage with H2 database
+- ️ **Input Validation**: Server-side validation for all expense data
+-  **RESTful API**: Clean JSON-based API following REST principles
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Technology | Purpose |
 |------------|---------|
@@ -39,7 +39,7 @@ The Personal Expense Tracker is a robust backend application designed to help us
 | **Maven** | Dependency management and build tool |
 | **Java 21** | Programming language |
 
-## 🏗️ Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 - **Java 17+** (Java 21 recommended)
@@ -67,7 +67,7 @@ The Personal Expense Tracker is a robust backend application designed to help us
    - **Username**: `sa`
    - **Password**: *(leave empty)*
 
-### 🐘 PostgreSQL Setup (Optional)
+###  PostgreSQL Setup (Optional)
 
 To use PostgreSQL instead of H2:
 
@@ -83,11 +83,11 @@ To use PostgreSQL instead of H2:
 
 3. **Comment out H2 configuration** and restart the application
 
-## 📚 API Documentation
+##  API Documentation
 
 ### Base URL: `http://localhost:8080/api/expenses`
 
-### 📝 Expense Model
+###  Expense Model
 ```json
 {
   "id": 1,
@@ -98,9 +98,9 @@ To use PostgreSQL instead of H2:
 }
 ```
 
-### 🔄 CRUD Operations
+###  CRUD Operations
 
-#### ➕ Add New Expense
+####  Add New Expense
 ```http
 POST /api/expenses
 Content-Type: application/json
@@ -113,17 +113,17 @@ Content-Type: application/json
 }
 ```
 
-#### 📋 Get All Expenses
+####  Get All Expenses
 ```http
 GET /api/expenses
 ```
 
-#### 🔍 Get Expense by ID
+####  Get Expense by ID
 ```http
 GET /api/expenses/1
 ```
 
-#### ✏️ Update Expense
+####  Update Expense
 ```http
 PUT /api/expenses/1
 Content-Type: application/json
@@ -136,12 +136,12 @@ Content-Type: application/json
 }
 ```
 
-#### 🗑️ Delete Expense
+####  Delete Expense
 ```http
 DELETE /api/expenses/1
 ```
 
-### 🔍 Filtering Operations
+###  Filtering Operations
 
 #### Filter by Category
 ```http
@@ -153,7 +153,7 @@ GET /api/expenses/filter/category?category=Food
 GET /api/expenses/filter/date?start=2025-10-01&end=2025-10-04
 ```
 
-### 📊 Summary & Analytics
+###  Summary & Analytics
 
 #### Total Spending
 ```http
@@ -186,7 +186,7 @@ GET /api/expenses/summary/month
 ]
 ```
 
-## 🗄️ Sample Data
+##  Sample Data
 
 The application comes pre-loaded with sample expenses via `import.sql`:
 
@@ -196,7 +196,7 @@ INSERT INTO EXPENSE (AMOUNT, DATE, NOTE, CATEGORY) VALUES (1200, '2025-10-03', '
 INSERT INTO EXPENSE (AMOUNT, DATE, NOTE, CATEGORY) VALUES (300, '2025-10-02', 'Bus ticket', 'Travel');
 ```
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 ExpenseTracker/
@@ -212,7 +212,7 @@ ExpenseTracker/
 └── data/                               # H2 database files (auto-generated)
 ```
 
-## 🎯 Key Design Decisions
+##  Key Design Decisions
 
 - **H2 Database**: Chosen for zero-setup development with persistent file storage
 - **RESTful Design**: Following REST principles for predictable API behavior
@@ -220,15 +220,15 @@ ExpenseTracker/
 - **Layered Architecture**: Separation of concerns with controller, service, and repository layers
 - **Date Handling**: Using `LocalDate` for proper date operations without timezone complexity
 
-## 🚀 Deliverables
+##  Deliverables
 
-- ✅ **Complete Source Code**: All implementation files with proper structure
-- ✅ **README.md**: Comprehensive documentation (this file)
-- ✅ **API Documentation**: Complete endpoint reference with examples
-- ✅ **Sample Data**: Pre-loaded test data for immediate testing
-- ✅ **Database Configuration**: Both H2 (default) and PostgreSQL options
+-  **Complete Source Code**: All implementation files with proper structure
+-  **README.md**: Comprehensive documentation (this file)
+-  **API Documentation**: Complete endpoint reference with examples
+-  **Sample Data**: Pre-loaded test data for immediate testing
+-  **Database Configuration**: Both H2 (default) and PostgreSQL options
 
-## 📝 Development Notes
+##  Development Notes
 
 ### Validation Rules
 - **Amount**: Must be positive (minimum value: 1)
@@ -249,4 +249,4 @@ The API returns appropriate HTTP status codes:
 
 **Ready to track your expenses!** 🎉
 
-For questions or contributions, please refer to the project repository or contact the development team.
+For questions or contributions, please refer to the project repository or contact me at [harsha.talatala@gmail.com](mailto:harsha.talatala@gmail.com).
