@@ -1,6 +1,6 @@
 package com.harsha.expensetracker.repository;
 
-import com.harsha.expensetracker.modal.Expense;
+import com.harsha.expensetracker.model.Expense;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

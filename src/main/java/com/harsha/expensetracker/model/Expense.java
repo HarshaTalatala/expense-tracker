@@ -1,4 +1,4 @@
-package com.harsha.expensetracker.modal;
+package com.harsha.expensetracker.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

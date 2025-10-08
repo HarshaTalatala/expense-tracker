@@ -1,6 +1,6 @@
 package com.harsha.expensetracker.service;
 
-import com.harsha.expensetracker.modal.Expense;
+import com.harsha.expensetracker.model.Expense;
 import com.harsha.expensetracker.repository.ExpenseRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
